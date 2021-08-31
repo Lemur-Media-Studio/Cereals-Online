@@ -43,8 +43,26 @@ nav {
     left: 5px;
 }
 
+/* lineas */
+
+.linea-verdeoscuro {
+    border-top: 10px solid #07291a;
+}
+
+.linea {
+    border-top: 10px solid #217A5C;
+}
+
+.linea-blanco {
+    border-top: 10px solid white;
+}
+
 .linea-container{
     border-top: 10px solid #ffbb33;
+}
+
+.linea-naranja{
+    border-top: 10px solid #f97e2b;
 }
 
 /* seccion imagenes */
@@ -71,7 +89,10 @@ nav {
 /* seccion about us */
 
 .aboutus-container {
-    background: linear-gradient(to bottom, #217A5C, #07291a );  
+/*     background: linear-gradient(to bottom, #07291a, #217A5C );  */
+/*     background-color: #217A5C;  */
+    background: rgb(2,0,36);
+    background: linear-gradient(337deg, rgba(2,0,36,1) 0%, #07291a 41%, #217A5C 100%);
     padding: 100px 550px;
 }
 
@@ -89,7 +110,7 @@ nav {
     justify-content: center !important;
     text-align: center;
     font-size: 25px;
-    color:white;
+    color: white;
     font-family: 'Nanum Myeongjo', serif;
 }
 
@@ -99,6 +120,35 @@ nav {
     font-size: 50px;
     font-family: 'Teko', sans-serif;
     color: #ffbb33;
+}
+
+/* seccion que hacemos */
+
+.quehacemos {
+/*     background: linear-gradient(to bottom, #217A5C, #051d12  ); */ 
+/*     background: rgb(2,0,36);
+    background: linear-gradient(200deg,white  0%, #217A5C 41%, rgba(2,0,36,1) 100%); */
+/*     background-color: white; */
+    background: url(https://www.ondoan.com/img/2020/02/santurtzi-web.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 100px 550px;
+}
+
+/* sustentabilidad */
+
+.sustentabilidad {
+    padding: 100px 550px;
+}
+
+/* seccion mapa */
+
+.mapa {
+    background: rgb(2,0,36);
+    background: linear-gradient(200deg,white  0%, #217A5C 41%, rgba(2,0,36,1) 100%);
+    padding: 100px 550px;
 }
 
 /* logo sticky */
@@ -154,12 +204,18 @@ nav {
     border-radius: 10px;
 }
 
-
-/*  .video-banner {
-    height: 1100px;
+video { 
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+     transform: translateX(-50%) translateY(-50%);
+/*     background-image: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/wppost.jpg);
+    background-size:cover;
+    background-position: center;  */
 }
 
-.container-video {
-    background-color: #ffbb33;
-}  */
+
+
 
