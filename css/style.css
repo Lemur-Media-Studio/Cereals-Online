@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* header */
@@ -11,7 +12,7 @@ nav {
 
 .imagen-header {
     position: relative;
-    left: 300px;
+    left: 250px;
 }
 
 .nav-link {
@@ -23,13 +24,17 @@ nav {
     transition: 1s;
 }
 
+.menu-principal {
+    margin: 15px;
+}
+
 .menu {
     display: flex;
     text-align: right !important;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
-    right: 400px;
-    font-family: 'Bebas Neue', cursive;
+    right: 300px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .bandera-menu:hover {
@@ -40,7 +45,7 @@ nav {
 
 .login {
     position: relative;
-    left: 5px;
+    left: -80px;
 }
 
 /* lineas */
@@ -68,11 +73,75 @@ nav {
 /* seccion imagenes */
 
 .titulo-video {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 75px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 70px;
     position: relative;
     bottom: 280px;
     filter: drop-shadow(0 0 0.5rem black);
+}
+
+/* seccion cards */
+
+.card-container {
+    background-color: white;
+    padding: 50px 510px !important;
+}
+
+.card {
+    color: white;
+    filter: drop-shadow(0 0 0.5rem black);
+    padding: 50px;
+    border-radius: 15px !important;
+}
+
+.card-imagen1 {
+    background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+    background-size: 450px;
+}
+
+.card-imagen2 {
+    background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+    background-size: 450px;
+}
+
+.card-imagen3 {
+    background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+    background-size: 450px;
+}
+
+.card-imagen4 {
+    background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+    background-size: 430px;  
+}
+
+.card-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    filter: drop-shadow(0 0 0.5rem black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-text {
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    top: 15px;
+    text-align: center !important;
+}
+
+.imagen-container {
+    position: relative !important;
+    display: inline-block !important;
+    text-align: center !important;
+}
+
+.imagen-productos {
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px !important;
 }
 
 /* seccion about us */
@@ -87,7 +156,8 @@ nav {
     display: flex;
     justify-content: center;
     font-size: 100px;
-    font-family: 'Bebas Neue', cursive;
+    padding-bottom: 25px;
+    font-family: 'Titillium Web', sans-serif;
     color: white;
     filter: drop-shadow(0 0 0.5rem black);
 }
@@ -98,7 +168,7 @@ nav {
     text-align: center;
     font-size: 25px;
     color: white;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Titillium Web', sans-serif;
     filter: drop-shadow(0 0 0.5rem black);
 }
 
@@ -106,14 +176,14 @@ nav {
     display: flex;
     justify-content: center;
     font-size: 50px;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: #ffbb33;
 }
 
 /* seccion que hacemos */
 
 .quehacemos {
-    background: url(https://www.ondoan.com/img/2020/02/santurtzi-web.jpg);
+    background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
@@ -121,22 +191,24 @@ nav {
     padding: 100px 550px;
 }
 
-.box {
+/* .box1 {
     background-color: rgba(161, 161, 161, 0.3);
-    border-radius: 5px;
-    text-align: center;
-    line-height: 1;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 20px 20px;
-}
+    border-radius: 5px; 
+    text-align: center; 
+    line-height: 1; 
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    padding: 25px 25px; 
+}  */ 
+
+
 .container {
     align-items: center;
     display: flex;
     justify-content: center;
     height: 100%;
     width: 100%;
-}
+} 
 
 
 /* sustentabilidad */
@@ -190,28 +262,15 @@ nav {
     transition: 1s;
 }
 
-.card {
-    color: white;
-    background-color: #ffbb33 !important;
-    filter: drop-shadow(0 0 0.5rem black);
-}
 
-.card-title {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-}
 
-.card:hover {
-    transform: scale(1.1) !important;
-    transition: 1s;
-    border-radius: 10px;
-}
-
-video {
+/* video {
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     z-index: -1;
     transform: translateX(-50%) translateY(-50%);
-}
+} */
+
+/* https://i.ibb.co/PWhs9RZ/heap-of-pearl-barley-grains-vegetarian-food-2-min.jpg */
