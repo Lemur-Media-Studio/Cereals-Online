@@ -1,0 +1,63 @@
+/* seccion cards */
+
+.card-container {
+    background-color: white;
+    padding: 50px 510px !important;
+}
+
+.card {
+    color: white;
+    filter: drop-shadow(0 0 0.5rem black);
+    padding: 50px;
+    border-radius: 15px !important;
+}
+
+.card-imagen1 {
+    background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+    background-size: 450px;
+}
+
+.card-imagen2 {
+    background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+    background-size: 450px;
+}
+
+.card-imagen3 {
+    background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+    background-size: 450px;
+}
+
+.card-imagen4 {
+    background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+    background-size: 430px;  
+}
+
+.card-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    filter: drop-shadow(0 0 0.5rem black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-text {
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    top: 15px;
+    text-align: center !important;
+}
+
+.imagen-container {
+    position: relative !important;
+    display: inline-block !important;
+    text-align: center !important;
+}
+
+.imagen-productos {
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px !important;
+}
