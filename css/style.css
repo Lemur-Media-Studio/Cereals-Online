@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -485,7 +486,7 @@ nav {
   text-align: right !important;
   font-size: 25px;
   position: relative;
-  right: 300px;
+  right: 240px;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -514,6 +515,13 @@ nav {
   filter: drop-shadow(0 0 0.5rem black);
   padding: 30px;
   border-radius: 15px !important;
+}
+
+.card-productos {
+  background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+  background-position: top;
+  background-size: cover;
+  padding: 100px 150px;
 }
 
 .card-imagen1 {
@@ -566,18 +574,175 @@ nav {
   border-top-right-radius: 30px !important;
 }
 
+/* cards barcos */
+.seccion-barcos {
+  background: url(https://cdn.discordapp.com/attachments/880523057557569609/888148126454657085/barco1.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 100px 150px;
+}
+
+.card-barcos {
+  display: flex !important;
+  display: inline-block !important;
+  flex-wrap: wrap !important;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+.card-img-top {
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+/* progress bar */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.circular-progress {
+  margin: auto;
+  position: relative;
+}
+.circular-progress, .circular-progress:before, .circular-progress:after {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+.circular-progress:before, .circular-progress:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.circular-progress:before {
+  padding: 0.5em;
+  box-sizing: border-box;
+  font-size: 2rem;
+  line-height: 8rem;
+}
+.circular-progress:after {
+  line-height: 6rem;
+  font-size: 2rem;
+}
+
+.barco1 {
+  transform: rotate(27deg);
+  background: linear-gradient(0deg, #217a5c 50%, rgba(33, 122, 92, 0.2) 50%);
+}
+.barco1:before, .barco1:after {
+  color: #217a5c;
+}
+.barco1:before {
+  content: "Barco 1";
+  background: #fff content-box;
+  transform: rotate(-27deg);
+  text-transform: uppercase;
+}
+.barco1:after {
+  content: "15%";
+  background: linear-gradient(transparent 50%, #fff 50%);
+  transform: scale(1.1) rotate(-27deg);
+}
+
+.barco2 {
+  transform: rotate(171deg);
+  background: linear-gradient(0deg, #f97e2b 50%, rgba(249, 126, 43, 0.2) 50%);
+}
+.barco2:before, .barco2:after {
+  color: #f97e2b;
+}
+.barco2:before {
+  content: "Barco 2";
+  background: #fff content-box;
+  transform: rotate(-171deg);
+  text-transform: uppercase;
+}
+.barco2:after {
+  content: "95%";
+  background: linear-gradient(transparent 50%, #fff 50%);
+  transform: scale(1.1) rotate(-171deg);
+}
+
+.barco3 {
+  transform: rotate(90deg);
+  background: linear-gradient(0deg, #ffbb33 50%, rgba(255, 187, 51, 0.2) 50%);
+}
+.barco3:before, .barco3:after {
+  color: #ffbb33;
+}
+.barco3:before {
+  content: "Barco 3";
+  background: #fff content-box;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+}
+.barco3:after {
+  content: "50%";
+  background: linear-gradient(transparent 50%, #fff 50%);
+  transform: scale(1.1) rotate(-90deg);
+}
+
+/* boton cards barcos */
+.css-button-arrow--green {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  left: 30px;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffbb33;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.css-button-arrow--green:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.css-button-arrow--green:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.css-button-arrow--green:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
 /* seccion about us */
 .aboutus-container {
   background: #020024;
   background: linear-gradient(337deg, #020024 0%, #07291a 41%, #217A5C 100%);
-  padding: 100px 550px;
+  padding: 70px 550px;
 }
 
 .titulo-aboutus {
   display: flex;
   justify-content: center;
   font-size: 100px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   font-family: "Titillium Web", sans-serif;
   color: white;
   filter: drop-shadow(0 0 0.5rem black);
@@ -595,7 +760,7 @@ nav {
 
 .subtitulo-aboutus {
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   font-size: 50px;
   font-family: "Titillium Web", sans-serif;
   color: #ffbb33;
@@ -608,7 +773,7 @@ nav {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  padding: 100px 550px;
+  padding: 70px 550px;
 }
 
 /* .box1 {
@@ -630,7 +795,7 @@ nav {
 
 /* sustentabilidad */
 .sustentabilidad {
-  padding: 100px 550px;
+  padding: 70px 550px;
 }
 
 /* seccion mapa */
@@ -843,15 +1008,26 @@ nav {
   text-decoration: none;
 }
 
-/* seccion imagenes */
-/* video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translateX(-50%) translateY(-50%);
-} */
+.seccion-legales {
+  background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+  background-position: top;
+  background-size: cover;
+  padding: 70px 550px;
+}
+
+.boton-mas-info {
+  position: relative;
+  left: 330px;
+}
+
+.boton-legales {
+  background-color: #ffbb33 !important;
+}
+
+.modal-header {
+  background-color: #217a5c !important;
+}
+
 /* https://i.ibb.co/PWhs9RZ/heap-of-pearl-barley-grains-vegetarian-food-2-min.jpg */
 
 /*# sourceMappingURL=style.css.map */
