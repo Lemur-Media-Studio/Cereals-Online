@@ -162,6 +162,7 @@
         color: white;
         font-family: 'Titillium Web', sans-serif;
         filter: drop-shadow(0 0 0.5rem black);
+        margin-bottom: 0px !important;
     }
     
     .subtitulo-aboutus {
@@ -200,7 +201,33 @@
         justify-content: center;
         height: 100%;
         width: 100%;
-    } 
+    }
+
+    /* LEGALES */
+    .seccion-legales {
+        background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+        background-position: top;
+        background-size: cover; 
+        padding: 20px 20px !important;
+    }
+    
+    .boton-mas-info {
+        position: static !important;
+        display: flex !important;
+    }
+    
+    .boton-legales {
+        background-color: $amarillo !important;
+    }
+    
+    .modal-header {
+        background-color: $verde-oscuro !important;
+    }
+    
+    .color-font{
+        color: #000 !important;
+        filter: drop-shadow(0 0 0.8rem black)
+    }
 }
 /* FIN MOBILE STYLES */
 
@@ -213,7 +240,7 @@
             text-align: left !important;
             height: 120px !important;
             position: static !important;
-            padding-left: 100px;
+            padding-left: 150px;
         }
         
         .nav-link {
@@ -228,6 +255,7 @@
         .navbar-nav{
             display: flex !important;
             justify-content: center !important;
+            padding-right: 80px !important;
         }
         
         .menu-principal {
@@ -240,6 +268,10 @@
             font-size: 20px !important;
             position: static !important;
             font-family: 'Titillium Web', sans-serif;
+        }
+
+        .lenguajes-login{
+            padding-left: 35px !important;
         }
         
         .bandera-menu:hover {
@@ -394,10 +426,85 @@
             justify-content: center;
             height: 100%;
             width: 100%;
-        } 
+        }
+        
+    /* LEGALES */
+    .seccion-legales {
+        padding: 100px 180px !important;
+    }
+
+    .boton-mas-info {
+        position: relative;
+        left: 830px !important;
+    }
     
 }
+/* FIN MACBOOK PRO 13" STYLES */
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 1701px) and (max-width: 1970px){
+            /* CARDS */
+            .card {
+                color: white;
+                filter: drop-shadow(0 0 0.5rem black);
+                padding: 50px 100px !important;
+                border-radius: 15px !important;
+                width: 80%;
+                margin: 0 auto !important;
+            }
+            
+            .card-imagen1 {
+                background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+                background-size: 650px !important;
+            }
+            
+            .card-imagen2 {
+                background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+                background-size: 650px !important;
+            }
+            
+            .card-imagen3 {
+                background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+                background-size: 650px !important;
+            }
+            
+            .card-imagen4 {
+                background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+                background-size: 630px !important;  
+            }
+            
+            .card-title {
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 40px;
+                padding-bottom: 10px;
+                filter: drop-shadow(0 0 0.5rem black);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .card-text {
+                font-size: 20px;
+                font-family: 'Titillium Web', sans-serif;
+                position: relative;
+                top: 15px;
+                text-align: center !important;
+            }
+            
+            .imagen-container {
+                position: relative !important;
+                display: inline-block !important;
+                text-align: center !important;
+            }
+            
+            .imagen-productos {
+                border-bottom-left-radius: 30px;
+                border-top-right-radius: 30px !important;
+            }
+}
 
 
 
