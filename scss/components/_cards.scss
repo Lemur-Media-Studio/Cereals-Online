@@ -9,7 +9,7 @@
 .card-productos {
     background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
     background-position: top;
-    background-size: cover; 
+    background-size: cover;
     padding: 100px 150px;
 }
 
@@ -70,120 +70,128 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover; 
+    background-size: cover;
     padding: 100px 150px;
 }
 
 .card-barcos {
-    display: flex !important;
-    display: inline-block !important;
-    flex-wrap: wrap !important;
     filter: drop-shadow(0 0 0.5rem black);
 }
 
-.card-img-top {
-    filter: drop-shadow(0 0 0.5rem black);
+.titulo-barcos {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: $amarillo;
 }
 
-.card-img-top:hover {
-    transform: scale(1.1);
-} 
+.parrafo-barcos {
+    display: flex;
+    justify-content: center !important;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    color: $amarillo;
+}
+
+.subtitulo-barcos {
+    display: flex;
+    justify-content: center !important;
+    font-size: 55px;
+    font-family: 'Titillium Web', sans-serif;
+    color: $verde-oscuro;
+}
 
 /* progress bar */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2em;
-}
 
-.circular-progress {
-    &,
-    &:before,
-    &:after {
-        width: 12rem;
-        height: 12rem;
-        border-radius: 50%;
-    }
-
-    margin: auto;
+.img-svg {
     position: relative;
+    right: 102px; 
+}
 
-    &:before,
-    &:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
+/* barco 1 */
+.fill-1 {
+    animation: charge 5s cubic-bezier(.17, .67, .54, .99) infinite, changeCol 5s ease-in infinite;
+}
+
+@keyframes charge {
+    0% {
+        transform: scaleX(0);
     }
 
-    &:before {
-        padding: .5em;
-        box-sizing: border-box;
-        font-size: 2rem;
-        line-height: 8rem;
+    100% {
+        transform: scaleX(6.5);
     }
 
-    &:after {
-        line-height: 6rem;
-        font-size: 2rem;
+}
+
+@keyframes changeCol {
+
+    0%,
+    10% {
+        fill: #f97e2b;
+    }
+
+    10%,
+    100% {
+        fill: #217A5C;
     }
 }
 
-@function progress($percent) {
-    $deg: $percent/100 * 180;
-    @return #{$deg}deg;
+/* barco 2 */
+.fill-2 {
+    animation: charge2 5s cubic-bezier(.17, .67, .54, .99) infinite, changeCol2 5s ease-in infinite;
 }
 
-@mixin circular-progress($percent, $skill, $color, $bgcolor) {
-    $progress: progress($percent);
-    transform: rotate($progress);
-    background: linear-gradient(0deg,
-            $color 50%,
-            rgba($color, .2) 50%);
-
-    &:before,
-    &:after {
-        color: $color;
+@keyframes charge2 {
+    0% {
+        transform: scaleX(0);
     }
 
-    &:before {
-        content: "#{$skill}";
-        background: $bgcolor content-box;
-        transform: rotate(-#{$progress});
-        text-transform: uppercase;
-    }
-
-    &:after {
-        content: "#{$percent}%";
-        background: linear-gradient(transparent 50%,
-                $bgcolor 50%,
-            );
-        transform: scale(1.1) rotate(-#{$progress});
+    100% {
+        transform: scaleX(3.25);
     }
 }
 
-.barco1 {
-    @include circular-progress(
-        15,
-        Barco 1,
-        $verde-oscuro,
-        #fff)
+@keyframes changeCol2 {
+
+    0%,
+    10% {
+        fill: #f97e2b;
+    }
+
+    10%,
+    100% {
+        fill: #217A5C;
+    }
 }
 
-.barco2 {
-    @include circular-progress(
-        95,
-        Barco 2,
-        $naranja,
-        #fff)
+/* barco 3 */
+.fill-3 {
+    animation: charge3 5s cubic-bezier(.17, .67, .54, .99) infinite, changeCol3 5s ease-in infinite;
 }
 
-.barco3 {
-    @include circular-progress(
-        50,
-        Barco 3,
-        $amarillo,
-        #fff)
+@keyframes charge3 {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(2);
+    }
+}
+
+@keyframes changeCol3 {
+
+    0%,
+    10% {
+        fill: #f97e2b;
+    }
+
+    10%,
+    100% {
+        fill: #217A5C;
+    }
 }
 
 /* boton cards barcos */
@@ -196,7 +204,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    left: 30px;
+    right: 20px;
     display: inline-block;
     outline: none;
     overflow: hidden;
