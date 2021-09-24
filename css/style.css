@@ -752,6 +752,7 @@ nav {
 /* barco 1 */
 .fill-1 {
   animation: charge 5s cubic-bezier(0.17, 0.67, 0.54, 0.99), changeCol 5s ease-in;
+  transform: scaleX(6.5);
 }
 
 @keyframes charge {
@@ -782,11 +783,12 @@ nav {
 /* barco 2 */
 .fill-2 {
   animation: charge2 5s cubic-bezier(0.17, 0.67, 0.54, 0.99), changeCol2 5s ease-in;
+  transform: scaleX(3.5);
 }
 
 @keyframes charge2 {
   0% {
-    transform: scaleX(0);
+    transform: none;
   }
   100% {
     transform: scaleX(3.5);
@@ -806,6 +808,7 @@ nav {
 /* barco 3 */
 .fill-3 {
   animation: charge3 5s cubic-bezier(0.17, 0.67, 0.54, 0.99), changeCol3 5s ease-in;
+  transform: scaleX(1.5);
 }
 
 @keyframes charge3 {

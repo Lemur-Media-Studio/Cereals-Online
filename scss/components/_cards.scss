@@ -112,6 +112,7 @@
 /* barco 1 */
 .fill-1 {
     animation: charge 5s cubic-bezier(.17, .67, .54, .99), changeCol 5s ease-in;
+    transform: scaleX(6.5);
 }
 
 @keyframes charge {
@@ -148,13 +149,13 @@
 /* barco 2 */
 .fill-2 {
     animation: charge2 5s cubic-bezier(.17, .67, .54, .99), changeCol2 5s ease-in;
+    transform: scaleX(3.5);
 }
 
 @keyframes charge2 {
-    0% {
-        transform: scaleX(0);
+    0%{
+        transform: none;
     }
-
     100% {
         transform: scaleX(3.5);
     }
@@ -177,6 +178,7 @@
 /* barco 3 */
 .fill-3 {
     animation: charge3 5s cubic-bezier(.17, .67, .54, .99), changeCol3 5s ease-in;
+    transform: scaleX(1.5);
 }
 
 @keyframes charge3 {
