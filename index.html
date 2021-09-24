@@ -28,6 +28,10 @@
       background: #217A5C;
     }
   </style>
+
+  <!-- CONTADOR -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -242,16 +246,16 @@
     <!-- cards barcos -->
     <!-- barco 1 -->
     <section class="seccion-barcos">
-      <div class="container">
+      <div class="container d-flex flex-wrap wrap d-sm-block">
         <div class="card card-barcos mx-auto" style="width: 20rem; height: 35rem;">
-          <h2 class="titulo-barcos">Maiz</h2>
+          <h2 class="titulo-barcos">Maíz</h2>
           <svg class="img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 768" width="330" height="320"
             fill="white" stroke="white" stroke-miterlimit="10" stroke-width="18"
             style="enable-background:new 0 0 1366 768;" xml:space="preserve">
             <g>
               <rect x="10" y="270" width="1300" height="290" fill="black" />
-              <rect class="fill-1" x="1" y="200" fill="#72CC58" width="200" height="500" stroke="#000000"
+              <rect class="fill-1" x="1" y="200" fill="#217A5C" width="200" height="500" stroke="#000000"
                 stroke-width="1" stroke-miterlimit="10" />
               <path d="M1308.9,495.5c0,75,0,150,0.1,224.9c0,4.2-0.7,5.2-5.1,5.2c-428.7-0.1-857.4-0.1-1286.1,0
         c-4.7,0-5.4-1.2-5.4-5.5c0.1-210.1,0.1-420.3,0-630.4c0-4.4,0.8-5.5,5.5-5.5c428.5,0.1,856.9,0.1,1285.4,0c4.9,0,5.7,1.3,5.7,5.8
@@ -290,10 +294,10 @@
         C1303.7,498,1305.2,495.1,1308.9,495.5z" />
             </g>
           </svg>
-          <h4 class="subtitulo-barcos">100%</h4>
-          <h4 class="parrafo-barcos">Destino:Brasil</h4>
-          <div class="card-body">
-            <a href="#"><button class="css-button-arrow--green">COMPRAR</button></a>
+          <h4 class="subtitulo-barcos counter" data-count="100">0</h4>
+          <h4 class="parrafo-barcos">Destino: Brasil</h4>
+          <div class="card-body btn-compra">
+            <a href="#"><button class="css-button-arrow--green text-center">COMPRAR</button></a>
           </div>
         </div>
 
@@ -306,7 +310,7 @@
             style="enable-background:new 0 0 1366 768;" xml:space="preserve">
             <g>
               <rect x="10" y="270" width="1300" height="290" fill="black" />
-              <rect class="fill-2" x="1" y="200" fill="#72CC58" width="200" height="500" stroke="#000000"
+              <rect class="fill-2" x="1" y="200" fill="#f9eb2b" width="200" height="500" stroke="#000000"
                 stroke-width="1" stroke-miterlimit="10" />
               <path d="M1308.9,495.5c0,75,0,150,0.1,224.9c0,4.2-0.7,5.2-5.1,5.2c-428.7-0.1-857.4-0.1-1286.1,0
         c-4.7,0-5.4-1.2-5.4-5.5c0.1-210.1,0.1-420.3,0-630.4c0-4.4,0.8-5.5,5.5-5.5c428.5,0.1,856.9,0.1,1285.4,0c4.9,0,5.7,1.3,5.7,5.8
@@ -345,9 +349,9 @@
         C1303.7,498,1305.2,495.1,1308.9,495.5z" />
             </g>
           </svg>
-          <h4 class="subtitulo-barcos">50%</h4>
-          <h4 class="parrafo-barcos">Destino:España</h4>
-          <div class="card-body">
+          <h4 class="subtitulo-barcos counter" data-count="50">0</h4>
+          <h4 class="parrafo-barcos">Destino: España</h4>
+          <div class="card-body btn-compra">
             <a href="#"><button class="css-button-arrow--green">COMPRAR</button></a>
           </div>
         </div>
@@ -361,7 +365,7 @@
             style="enable-background:new 0 0 1366 768;" xml:space="preserve">
             <g>
               <rect x="10" y="270" width="1300" height="290" fill="black" />
-              <rect class="fill-3" x="1" y="200" fill="#72CC58" width="200" height="500" stroke="#000000"
+              <rect class="fill-3" x="1" y="200" fill="#f97e2b" width="200" height="500" stroke="#000000"
                 stroke-width="1" stroke-miterlimit="10" />
               <path d="M1308.9,495.5c0,75,0,150,0.1,224.9c0,4.2-0.7,5.2-5.1,5.2c-428.7-0.1-857.4-0.1-1286.1,0
         c-4.7,0-5.4-1.2-5.4-5.5c0.1-210.1,0.1-420.3,0-630.4c0-4.4,0.8-5.5,5.5-5.5c428.5,0.1,856.9,0.1,1285.4,0c4.9,0,5.7,1.3,5.7,5.8
@@ -400,9 +404,9 @@
         C1303.7,498,1305.2,495.1,1308.9,495.5z" />
             </g>
           </svg>
-          <h4 class="subtitulo-barcos">25%</h4>
-          <h4 class="parrafo-barcos">Destino:Francia</h4>
-          <div class="card-body">
+          <h4 class="subtitulo-barcos counter" data-count="25">0</h4>
+          <h4 class="parrafo-barcos">Destino: Francia</h4>
+          <div class="card-body btn-compra">
             <a href="#"><button class="css-button-arrow--green">COMPRAR</button></a>
           </div>
         </div>

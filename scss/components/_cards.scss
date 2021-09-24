@@ -71,7 +71,7 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    padding: 100px 150px;
+    padding: 100px 180px;
 }
 
 .card-barcos {
@@ -89,7 +89,7 @@
 .parrafo-barcos {
     display: flex;
     justify-content: center !important;
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Titillium Web', sans-serif;
     color: $amarillo;
 }
@@ -106,12 +106,12 @@
 
 .img-svg {
     position: relative;
-    right: 102px; 
+    right: 102px;
 }
 
 /* barco 1 */
 .fill-1 {
-    animation: charge 5s cubic-bezier(.17, .67, .54, .99) infinite, changeCol 5s ease-in infinite;
+    animation: charge 5s cubic-bezier(.17, .67, .54, .99), changeCol 5s ease-in;
 }
 
 @keyframes charge {
@@ -128,11 +128,18 @@
 @keyframes changeCol {
 
     0%,
-    10% {
+    0%{
+        fill: #f92b2b;
+    }
+    25% {
         fill: #f97e2b;
     }
-
-    10%,
+    50%{
+        fill: #f9eb2b;
+    }
+    75%{
+        fill: #5b7a21;
+    }
     100% {
         fill: #217A5C;
     }
@@ -140,7 +147,7 @@
 
 /* barco 2 */
 .fill-2 {
-    animation: charge2 5s cubic-bezier(.17, .67, .54, .99) infinite, changeCol2 5s ease-in infinite;
+    animation: charge2 5s cubic-bezier(.17, .67, .54, .99), changeCol2 5s ease-in;
 }
 
 @keyframes charge2 {
@@ -149,26 +156,27 @@
     }
 
     100% {
-        transform: scaleX(3.25);
+        transform: scaleX(3.5);
     }
 }
 
 @keyframes changeCol2 {
 
     0%,
-    10% {
+    0%{
+        fill: #f92b2b;
+    }
+    50% {
         fill: #f97e2b;
     }
-
-    10%,
-    100% {
-        fill: #217A5C;
+    100%{
+        fill: #f9eb2b;
     }
 }
 
 /* barco 3 */
 .fill-3 {
-    animation: charge3 5s cubic-bezier(.17, .67, .54, .99) infinite, changeCol3 5s ease-in infinite;
+    animation: charge3 5s cubic-bezier(.17, .67, .54, .99), changeCol3 5s ease-in;
 }
 
 @keyframes charge3 {
@@ -177,20 +185,18 @@
     }
 
     100% {
-        transform: scaleX(2);
+        transform: scaleX(1.5);
     }
 }
 
 @keyframes changeCol3 {
 
     0%,
-    10% {
-        fill: #f97e2b;
+    50%{
+        fill: #f92b2b;
     }
-
-    10%,
     100% {
-        fill: #217A5C;
+        fill: #f97e2b;
     }
 }
 

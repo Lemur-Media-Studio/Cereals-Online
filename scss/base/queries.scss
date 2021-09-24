@@ -75,9 +75,9 @@
     }
 
     /* CARDS */
-    .card-container {
+    .card-productos {
         background-color: white;
-        padding: 10px 100px !important;
+        padding: 10px 0px !important;
     }
 
     .card {
@@ -134,6 +134,20 @@
     .imagen-productos {
         border-bottom-left-radius: 30px;
         border-top-right-radius: 30px !important;
+    }
+
+    .seccion-barcos {
+        padding: 100px 0px !important;
+    }
+
+    .img-svg {
+        position: relative !important;
+        right: 12% !important;
+    }
+
+    .card-barcos {
+        filter: drop-shadow(0 0 0.5rem black);
+        margin-top: 15px !important;
     }
 
     /* ABOUT US */
@@ -350,6 +364,11 @@
             top: 15px;
             text-align: center !important;
         }
+
+        .btn-compra{
+            position: relative !important;
+            left: 29% !important;
+        }
         
         .imagen-container {
             position: relative !important;
@@ -360,6 +379,13 @@
         .imagen-productos {
             border-bottom-left-radius: 30px;
             border-top-right-radius: 30px !important;
+        }
+
+        /* progress bar */
+
+        .img-svg {
+            position: relative;
+            right: 3.5% !important;
         }
     
         /* ABOUT US */
